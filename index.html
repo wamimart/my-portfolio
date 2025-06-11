@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>My First Webpage</title>
+<style>
+    body {
+        background-color: lightyellow;
+        font-family: Arial, sans-sarif;
+    }
+
+h1 {
+    color: darkgreen;
+    text-align: center;
+ }
+
+ p {
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+ }
+ 
+ h2 {
+    color: navy;
+    font-size: 28px;
+    margin-top: 30px;
+    
+}
+
+    ul {
+       list-style: square; 
+       color: darkblue;
+       font-size: 18px;
+       text-align: left;
+       display: inline-block;
+       margin-top: 10px;
+    }
+
+    image {
+         width: 300px;
+         border-radius: 10px; 
+         margin-top: 30px;
+    }
+
+a {
+  text-decoration: none;
+  color: darkred;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  margin-bottom: 30px;
+  font-size: 18px;
+ }
+
+nav a {
+   color: blue;
+   text-decoration: none;
+   margin: 0 10px;
+}
+
+ nav a:hover { 
+    text-decoration: underline;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 30px;
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+
+<body>  
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="about.html">About</a> |
+  <a href="projects.html">Projects</a> |
+  <a href="#contact">Contact</a>
+</nav>
+
+
+
+<h1>My name is wami</h1>
+<p>I am learning web development!</p>
+
+<h2>My Favorte Things:</h2>
+
+<ul>
+    <li><a href="https://en.wikipedia.org/wiki/Pizza" target="_blank">Pizza</a></li>
+    <li><a href="https://www.freecodecamp.org/" target="_blank">Coding</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Cat">Cats</a></li>
+    
+</ul>
+
+<img src="https://www.sportico.com/wp-content/uploads/2025/05/Ronaldo_Saudi.png?w=1280&h=720&crop=1" alt="Cristiano Ronaldo">
+
+<button onclick="changeColor()">Click Me to Change Background</button>
+<script>
+  function changeColor() {
+    // List of possible colors
+    const colors = ["lightblue", "lightgreen", "lavender", "peachpuff", "lightpink", "beige", "lightgray", "wheat"];
+
+    // Pick a random color from the list
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+    // Change the background to that color
+    document.body.style.backgroundColor = randomColor;
+  }
+</script>
+
+<h2 id="contact">Contact Me</h2>
+<form action="https://formsubmit.co/wamimartofficial@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required><br><br>
+  <input type="email" name="email" placeholder="Your Email" required><br><br>
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br><br>
+  <button type="submit">Send</button>
+</form>
+
+
+</body>
+</html>
